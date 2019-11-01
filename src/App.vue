@@ -155,10 +155,10 @@
         },
         methods: {
             useTest: function () {
-                instance.get('/static/map.json').then(res => {
+                instance.get('static/map.json').then(res => {
                     this.importMap(res.data)
                 })
-                instance.get('/static/path.json').then(res => {
+                instance.get('static/path.json').then(res => {
                     this.importPath(res.data)
                 })
             },
@@ -428,7 +428,7 @@
     .mapFloat ._pin {
     width: 64px;
     height: 64px;
-    background: url(/public/img/pin.png) center no-repeat;
+    /*background: url(/public/img/pin.png) center no-repeat;*/
     text-align: center;
     line-height: 64px;
     color: #fff;
